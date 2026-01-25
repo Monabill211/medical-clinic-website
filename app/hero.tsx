@@ -71,13 +71,13 @@ export default function Hero() {
            <div className='box1 flex flex-col items-center  w-32 h-44 rounded-2xl'
              style={{padding:"10px" ,boxShadow: "1px 1px 9px 2px rgb(1, 1, 1, 0.5)",background:"#ffff"
    }}><AccessTimeIcon style={{background:"#rgb(5 150 105 / 30%);", color:"#059669", borderRadius:"50%", padding:"5px"}}/> 
-   <h3 className='font-bold'>اطباء متخصصون</h3> 
+   <h3 className='font-bold'> خدمة علي مدار الساعة</h3> 
    <p className='' style={{color:"rgb(69 71 75)", textAlign:"right"}}> متاحين في خدمتك في اي وقت تحتاج اليه</p>
    </div>
            <div className='box1 flex flex-col items-center  w-32 h-44 rounded-2xl'
              style={{padding:"10px" ,boxShadow: "1px 1px 9px 2px rgb(1, 1, 1, 0.5)",background:"#ffff"
    }}><LocalHospitalIcon style={{background:"#DBEAFE", color:"#1E40AF", borderRadius:"50%"}}/> 
-   <h3 className='font-bold'>اطباء متخصصون</h3> 
+   <h3 className='font-bold'>احدث التقنيات</h3> 
    <p className='' style={{color:"rgb(69 71 75)", textAlign:"right"}}> معدات  طبية متطورة و تقنيات حديثة</p>
    </div>
     
