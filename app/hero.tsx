@@ -83,10 +83,11 @@ export default function Hero() {
     
         </div>
         <div className='buttons flex justify-evenly'>
-    <button className=" border-solid border-2 border-blue-600 rounded-4xl       cursor-pointer
+    <button className=" border-solid border-2 border-blue-600 rounded-4xl   hover:-translate-y-1      transition-all duration-300 ease-in-out     cursor-pointer
 " style={{padding: "10px" ,boxShadow:"0px 5px 25px 0px rgb(1, 1, 1, 0.5)"}}>  اتصل بنا <AddIcCallIcon style={{ fontSize: "15px" }}/></button>
- <button className="bg-blue-600 text-white rounded-4xl       cursor-pointer
-" style={{padding: "10px " ,boxShadow:" 0px 5px 25px 0px rgb(1, 1, 1, 0.5)"}}> احجز موعدك الان < AssignmentTurnedInIcon style={{ fontSize: "15px" }}/></button>
+ <button className="bg-blue-600 text-white rounded-4xl     hover:-translate-y-1      transition-all duration-300 ease-in-out   cursor-pointer
+" style={{padding: "10px " ,boxShadow:" 0px 5px 25px 0px rgb(1, 1, 1, 0.5)"}}> احجز موعدك الان 
+< AssignmentTurnedInIcon style={{ fontSize: "15px" }}/></button>
         </div>
       </div>
     </div>
