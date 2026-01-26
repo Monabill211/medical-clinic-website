@@ -1,6 +1,6 @@
 import React from 'react'
 import CheckIcon from '@mui/icons-material/Check';
-import Loader from './card';
+import Loader from './loder';
 export default function Serves() {
   return (
     <div>   
@@ -35,6 +35,9 @@ export default function Serves() {
                 <h5 className='text-end'>علاج المضاعفات <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%"}} />  </h5>
            
             </div>
+            </div>
+                    <div className='flex justify-around flex-wrap gap-8'>
+
             <div className='box4      hover:-translate-y-1        transition-all duration-300 ease-in-out
  w-72 rounded-2xl hover:shadow-xl/95 hover:shadow-green-200 shadow-md' style={{padding:"10px"}}>
                 <img src="/img/8b77bf832fa06903cc23c6493e8291a1.jpg" className=' rounded-2xl '></img>

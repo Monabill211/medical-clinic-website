@@ -1,5 +1,5 @@
 import React from 'react'
-import Loader from './card';
+import Loader from './loder';
 import CheckIcon from '@mui/icons-material/Check';
 
 export default function About() {
