@@ -10,7 +10,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function Contact() {
   return (
     <div>
-       <div style={{margin:"20px",background:"#fafafa"}}>
+       <div style={{margin:"50px"}}>
    
  
         <h1 className='text-4xl text-blue-800 text-center'>تواصل معانا</h1>
@@ -107,7 +107,8 @@ export default function Contact() {
          <h4 className='font-bold text-green-400 text-center' style={{marginTop:"5px"}} >11:00 م</h4>
       </div>
     </div>
-       <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+    <a href="tel:+201021219588"
+    ><div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
@@ -123,8 +124,11 @@ export default function Contact() {
      hover:text-white hover:bg-green-600  
 
       '/>
-     </div>
-       <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+     </div> </a>
+
+       
+     <a href="https://wa.me/201021219588">
+      <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
@@ -141,7 +145,10 @@ export default function Contact() {
 
       '/>
      </div>
-       <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+     </a>
+      <a href="mailto:mmnabill211@gmail.com">
+        
+<div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
@@ -158,7 +165,13 @@ export default function Contact() {
 
       '/>
      </div>
-       <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+      </a>
+
+       
+<a href="https://www.google.com/maps/search/القاهرة">
+
+
+     <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
@@ -175,6 +188,8 @@ export default function Contact() {
 
       '/>
      </div>
+     </a>
+       
     </div>
         </div>
  
