@@ -5,15 +5,22 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import InfoIcon from '@mui/icons-material/Info';
 import AddCallIcon from '@mui/icons-material/AddCall';
 import LanguageIcon from '@mui/icons-material/Language';
+import ButtonHedear from './hedaericon';
 
 export default function Navbar() {
   return (
     <div dir="rtl" className="flex items-center justify-around" style={{    boxShadow: "0px -6px 20px 8px rgb(1, 1, 1, 0.5)"}}>
-      <div className='logo cursor-pointer
+     <div className="block md:hidden">
+   <ButtonHedear />
+</div>
+
+       <div className='logo cursor-pointer
 '>
         <img src="\img\download.png" className='w-20 h-20' />
+
       </div>
-      <div className="serves flex gap-7">
+     
+      <div className="serves flex gap-7 hidden md:block">
 
   {/* الرئيسية – Active */}
   <h4
@@ -37,8 +44,6 @@ export default function Navbar() {
       after:rounded-full
       after:-translate-x-1/2
       after:opacity-100
-   
-
     "
     style={{padding:"8px"}}
   >

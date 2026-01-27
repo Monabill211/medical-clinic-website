@@ -15,7 +15,7 @@ export default function Booking() {
         <h1 className='text-4xl text-blue-800 text-center'>حجز موعد</h1>
         <h2 className='text-2xl text-green-800 text-center m-4 ' >اختر الوقت المناسب لك و احصل علي افضل رعاية</h2> 
         <Loader  />     </div>
-  <div dir="rtl" className='flex'  >
+  <div dir="rtl" className='flex justify-around'  >
 
   <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",margin:"90px" }}>
       

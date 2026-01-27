@@ -1,0 +1,116 @@
+import React from 'react'
+import Loader from './icon'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
+import CallIcon from '@mui/icons-material/Call';
+import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
+export default function Footer() {
+  return (
+    <div dir="rtl" className='bg-#0f172a' style={{marginTop:"100px",background:"#0f172a" ,color:"white"}}>
+        <div className='grid grid-cols-[1fr_1.5fr_1.5fr_1.5fr] items-center bg-#0f172a '>
+<div className='1 ' >
+    <div className='up flex items-center w-max '>
+        <Loader /  >
+        
+          <h2 className='text-2xl'>عيادة الشفاء</h2>
+        </div>
+    <div className='center font-bold text-gray-300 ' style={{margin:"20px"}}> 
+        <h1>نحن نقدم أفضل الخدمات الطبية
+             بأحدث التقنيات والمعدات الطبية المتطورة، مع فريق من الأطباء 
+            المتخصصين لضمان حصولكم على أفضل رعاية صحية.</h1>
+    </div>
+    <div className='down flex items-center justify-around text-gray-300  '>
+      <span className='transition-all duration-300 ease-in-out hover:-translate-y-2 '>
+        <FacebookIcon className='border border-gray-400 hover:text-white hover:bg-green-400 cursor-pointer
+' style={{padding:"4px",borderRadius:"7px",fontSize:"35px"}} />
+      </span>
+       
+     <span className='transition-all duration-300 ease-in-out hover:-translate-y-2 '>
+        <InstagramIcon className='border border-gray-400 hover:text-white hover:bg-green-400 cursor-pointer
+' style={{padding:"4px",borderRadius:"7px",fontSize:"35px"}} />
+      </span>
+      <span className='transition-all duration-300 ease-in-out hover:-translate-y-2 '>
+        <LinkedInIcon className='border border-gray-400 hover:text-white hover:bg-green-400 cursor-pointer
+' style={{padding:"4px",borderRadius:"7px",fontSize:"35px"}} />
+      </span>
+      <span className='transition-all duration-300 ease-in-out hover:-translate-y-2 '>
+        <XIcon className='border border-gray-400 hover:text-white hover:bg-green-400 cursor-pointer
+' style={{padding:"4px",borderRadius:"7px",fontSize:"35px"}} />
+      </span>
+    </div>
+    </div>
+      <div className='2' style={{margin:"auto"}} >
+          <div className='up w-max flex items-center '>
+     <h1 className='text-2xl font-bold' style={{position:"relative",top:"-49px"}}>خدمتنا الطبية</h1>
+
+            </div>
+          <div className='down w-max flex items-center flex-col items-start font-bold text-gray-300  '>
+     <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2'>عملية الغضروف</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2'>عملية الركبه</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2'> العظام</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer           
+      transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'>عملية العظام</h2>
+
+            </div>
+      </div>
+      <div className='3' > 
+        <div className='up flex items-centerw-max '>
+               <h1 className='text-2xl   font-bold' style={{margin:"10px " ,position:"relative",top:"-25px"}}>روابط سريعة</h1>
+        </div>
+              <div className='down w-max flex items-center flex-col items-start font-bold text-gray-300  '>
+     <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2'>حجز موعد</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2'>التخصصات</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2'>عن العيادة</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> اتصل بنا</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> سياسة الخصوصية</h2>
+     <h2 className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> اخلاء المسؤلية الطبية</h2>
+
+            </div>
+         </div>
+      <div className='4' >
+        <div className='up flex items-center w-max ' >
+               <h1 className='text-2xl  font-bold'>تواصل معانا</h1>
+        </div>
+       <div className='down w-max flex items-center flex-col items-start font-bold text-gray-300  '>
+    <h2 style={{marginTop:"8px"}} className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> <AddLocationAltIcon style={{padding:"4px",borderRadius:"7px",marginLeft:"5px"}} className='text-6xl bg-green-300 text-green-600
+     hover:text-white hover:bg-green-600  
+      '/> جمهورية مصر العربية</h2>
+    <h2 style={{marginTop:"8px"}} className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> <CallIcon style={{padding:"4px",borderRadius:"7px",marginLeft:"5px"}} className='text-6xl bg-green-300 text-green-600
+     hover:text-white hover:bg-green-600  
+      '/> 01021219588</h2>
+    <h2 style={{marginTop:"8px"}} className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> <AttachEmailIcon style={{padding:"4px",borderRadius:"7px",marginLeft:"5px"}} className='text-6xl bg-green-300 text-green-600
+     hover:text-white hover:bg-green-600  
+      '/>  mmnabill211@gmail.com  </h2>
+    <h2 style={{marginTop:"8px"}} className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> <WhatsAppIcon style={{padding:"4px",borderRadius:"7px",marginLeft:"5px"}} className='text-6xl bg-green-300 text-green-600
+     hover:text-white hover:bg-green-600  
+      '/>  01021219588  </h2>
+    <h2 style={{marginTop:"8px"}} className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> <AccessTimeIcon style={{padding:"4px",borderRadius:"7px",marginLeft:"5px"}} className='text-6xl bg-green-300 text-green-600
+     hover:text-white hover:bg-green-600  
+      '/> الاحد-الاثنين-الخميس</h2>
+    <h2 style={{marginTop:"8px"}} className=' hover:text-green-400 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-x-2 w-max font-bold'> <AccessTimeIcon style={{padding:"4px",borderRadius:"7px",marginLeft:"5px"}} className='text-6xl bg-green-300 text-green-600
+     hover:text-white hover:bg-green-600  
+      '/> 09:00-10:00-11:00</h2>
+
+            </div>
+      </div>
+
+        </div>
+<div className="w-full h-[2px] bg-gray-600 my-6" style={{margin:"10PX"}}></div>
+<div className='flex justify-around'>
+      <div><p className="text-center text-gray-400 text-sm pb-4">
+  © 2026 Your Company Name. All rights reserved.
+</p></div>
+      <div><p className="text-center text-gray-400 text-sm pb-4">
+  معتمد من وزارة الصحة
+</p></div>
+</div>
+  
+    </div>
+  )
+}

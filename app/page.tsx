@@ -8,6 +8,7 @@ import Certificates from "./Certificates";
 import AQ from "./A&Q";
 import Contact from "./contact";
 import Reviews from "./Reviews";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Certificates />
       <Reviews />
       <Contact />
+      <Footer />
 
     </div>
   );

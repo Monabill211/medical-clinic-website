@@ -43,16 +43,18 @@ export default function About() {
             <h2 
             className='b-#fafafa rounded-3xl
              text-#171717c4 font-light   
+             hover:border-green-300 
+             hover:bg-white 
+             hover:shadow-lg 
              transition-all duration-300 ease-in-out
-    hover:border-green-300 
-    hover:bg-white 
-    hover:shadow-lg 
     hover:-translate-y-1
         border border-transparent
 ' 
     style={{padding:"15px" , background:"#fafafa"}}>
 
-         <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
+         <CheckIcon className='text-green-800 bg-green-200 text-2xl 
+          'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} /> 
+           تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
             <h2 
             className='b-#fafafa rounded-3xl
              text-#171717c4 font-light   
@@ -65,7 +67,8 @@ export default function About() {
 ' 
     style={{padding:"15px" , background:"#fafafa"}}>
 
-         <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
+         <CheckIcon className='text-green-800 bg-green-200 text-2xl 
+          'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
             <h2 
             className='b-#fafafa rounded-3xl
              text-#171717c4 font-light   
