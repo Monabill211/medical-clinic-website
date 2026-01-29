@@ -9,7 +9,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export default function Hero() {
   return (
-    <div className='flex justify-around p-14 flex-col' style={{padding:"50px"}}>
+    <div className='flex justify-around p-14 flex-col items-center md:flex-row ' style={{padding:"50px"}}>
       <div className='img relative inline-block'>
 <img src="\img\image 1.png" style={{boxShadow: "-1px 3px 20px 2px rgb(1, 1, 1, 0.5)", borderRadius:"15px"}}/>
  <div

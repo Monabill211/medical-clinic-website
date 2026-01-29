@@ -13,7 +13,7 @@ export default function About() {
 
         <Loader />
   </div>
-  <div  dir="rtl" className='flex justify-around'>
+  <div  dir="rtl" className='flex justify-around flex-col items-center md:flex-row'>
     <div className='relative inline-block'> 
         <img src="/img/image 5.png" style={{boxShadow: "-20px 20px 18px 0px #8bdf62",borderRadius:"15px"}} className='run'  ></img>
         <div

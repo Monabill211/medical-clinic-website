@@ -1,3 +1,5 @@
+"use client";
+
 import HomeIcon from '@mui/icons-material/Home';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -6,13 +8,20 @@ import InfoIcon from '@mui/icons-material/Info';
 import AddCallIcon from '@mui/icons-material/AddCall';
 import LanguageIcon from '@mui/icons-material/Language';
 import ButtonHedear from './hedaericon';
+import Hedermobil from './heder-mobil';
+import { useState } from "react";
 
 export default function Navbar() {
+    const [open, setOpen] = useState(false);
+
   return (
+    
     <div dir="rtl" className="flex items-center justify-around" style={{    boxShadow: "0px -6px 20px 8px rgb(1, 1, 1, 0.5)"}}>
+      {/* <Hedermobil /> */}
      <div className="block md:hidden">
-   <ButtonHedear />
+   <ButtonHedear onClick={() => setOpen(true)} ></ButtonHedear>
 </div>
+      <Hedermobil open={open} close={() => setOpen(false)} />
 
        <div className='logo cursor-pointer
 '>
@@ -20,7 +29,7 @@ export default function Navbar() {
 
       </div>
      
-      <div className="serves flex gap-7 hidden md:block">
+      <div className="serves flex gap-7 hidden md:flex">
 
   {/* الرئيسية – Active */}
   <h4
