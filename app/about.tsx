@@ -19,8 +19,8 @@ export default function About() {
         <div
     className="
       absolute
-      -top-4
-      left-72
+      -bottom-5
+      right-70
       w-20
       h-15
       rounded-lg
@@ -41,16 +41,19 @@ export default function About() {
     <div>
     <h1 className='text-4xl text-blue-800 text-center 'style={{margin:"15px"}} > الموهلات والخبرات</h1>
             <h2 
-            className='b-#fafafa rounded-3xl
-             text-#171717c4 font-light   
+            className='b-#fafafa 
+            rounded-3xl
+             text-#171717c4
+              font-light   
              hover:border-green-300 
              hover:bg-white 
              hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-y-1
         border border-transparent
+      
 ' 
-    style={{padding:"15px" , background:"#fafafa"}}>
+    style={{padding:"15px" , background:"#fafafa" ,margin:"auto auto 10px auto" ,width:"92%" }}>
 
          <CheckIcon className='text-green-800 bg-green-200 text-2xl 
           'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} /> 
@@ -65,7 +68,7 @@ export default function About() {
     hover:-translate-y-1
         border border-transparent
 ' 
-    style={{padding:"15px" , background:"#fafafa"}}>
+    style={{padding:"15px" , background:"#fafafa" ,margin:"auto auto 10px auto" ,width:"92%" }}>
 
          <CheckIcon className='text-green-800 bg-green-200 text-2xl 
           'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
@@ -79,7 +82,7 @@ export default function About() {
     hover:-translate-y-1
         border border-transparent
 ' 
-    style={{padding:"15px" , background:"#fafafa"}}>
+    style={{padding:"15px" , background:"#fafafa" ,margin:"auto auto 10px auto" ,width:"92%" }}>
 
          <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
             <h2 
@@ -92,7 +95,7 @@ export default function About() {
     hover:-translate-y-1
         border border-transparent
 ' 
-    style={{padding:"15px" , background:"#fafafa"}}>
+    style={{padding:"15px" , background:"#fafafa" ,margin:"auto auto 10px auto" ,width:"92%" }}>
 
          <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
             <h2 
@@ -105,13 +108,13 @@ export default function About() {
     hover:-translate-y-1
         border border-transparent
 ' 
-    style={{padding:"15px" , background:"#fafafa"}}>
+    style={{padding:"15px" , background:"#fafafa" ,margin:"auto auto 10px auto" ,width:"92%" }}>
 
          <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%", marginLeft:"10px"}} />  تخرج دكتور   كطبيب عظام من كلية الطب جامعة عين شمس بتقدير امتياز مع مرتبة الشرف </h2>
 
          <h1 className='text-4xl text-blue-800 text-center 'style={{margin:"10px"}}>التخصصات</h1>
-         <p style={{margin:"10px"}}>تشمل خبرة دكتور الواسعة العديد من التخصصات في طب العظام:</p>
-         <div className='flex flex-wrap gap-11' style={{marginTop:"15px"}} >
+         <p style={{margin:"10px"}} className='text-center'>تشمل خبرة دكتور الواسعة العديد من التخصصات في طب العظام:</p>
+         <div className='flex justify-center flex-wrap gap-11' style={{marginTop:"15px"}} >
 
       
          <h3 className="
@@ -164,7 +167,7 @@ border-green-600
 border
              " style={{padding: "10px "}}> المفاصل   
 </h3>  </div>
-   <div className='flex flex-wrap gap-11' style={{marginTop:"15px"}} >
+   <div className='flex justify-center flex-wrap gap-11' style={{marginTop:"15px"}} >
          <h3 className="
           text-black w-36 
           rounded-4xl   

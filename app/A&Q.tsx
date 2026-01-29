@@ -52,7 +52,7 @@ const faqs = [
               onClick={() =>
                 setOpenIndex(isOpen ? null : index)
               }
-              className={`flex items-center w-2/3 justify-between cursor-pointer rounded-3xl border px-6 py-5 transition hover:border-green-400 hover:text-green-400   hover:shadow-lg 
+              className={`flex items-center w-11/12 md:w-w-2/3 justify-between cursor-pointer rounded-3xl border px-6 py-5 transition hover:border-green-400 hover:text-green-400   hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-y-1 
                 ${isOpen ? "border-teal-500" : "border-gray-200"}
@@ -73,7 +73,7 @@ const faqs = [
 
             {/* الإجابة */}
             {isOpen && (
-              <div style={{margin:"10px auto",padding:"15px"}} className="mt-4 w-2/3 text-center rounded-2xl border border-teal-500 bg-white px-6 py-5 text-gray-700 leading-relaxed">
+              <div style={{margin:"10px auto",padding:"15px"}} className="mt-4 w-11/12 md:w-w-2/3 text-center rounded-2xl border border-teal-500 bg-white px-6 py-5 text-gray-700 leading-relaxed">
                 {item.a}
               </div>
             )}

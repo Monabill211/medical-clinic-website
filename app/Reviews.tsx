@@ -10,7 +10,7 @@ export default function Reviews() {
         <h1 className='text-4xl text-blue-800 text-center'> اراء عملائنا</h1>
         <h2 className='text-2xl text-green-800 text-center m-4 '  >اراء عملاءنا عنا </h2> 
         <Loader  />     </div>
-        <div className='flex justify-around'>
+        <div className='flex justify-around flex-wrap '>
             <div className='  justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-y-2

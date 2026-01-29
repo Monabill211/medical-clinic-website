@@ -9,7 +9,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export default function Hero() {
   return (
-    <div className='flex justify-around p-14 flex-col items-center md:flex-row ' style={{padding:"50px"}}>
+    <div className='flex justify-around p-14 flex-col items-center md:flex-row md:gap-0 gap-16  ' style={{padding:"50px"}}>
       <div className='img relative inline-block'>
 <img src="\img\image 1.png" style={{boxShadow: "-1px 3px 20px 2px rgb(1, 1, 1, 0.5)", borderRadius:"15px"}}/>
  <div
@@ -36,7 +36,7 @@ export default function Hero() {
  <div
     className="
       absolute
-      bottom-28
+      -bottom-6
       -right-10
       w-40
       h-15
@@ -56,12 +56,12 @@ export default function Hero() {
   </div>
       </div>
       <div className='body'>
-        <div className='text'>
-            <h2 className='text-blue-600 font-medium text-4xl text-end'>رعاية طبية</h2>
-            <h2 className='text-green-600 font-medium text-5xl text-end'> متقدمة وشاملة</h2>
-            <p className='text-end'> نقدم خدمات طبية  عالية الجودة مع فريق من افضل الاطباء<br></br> المختصصين لضمان صحتك و راحتك  </p>
+        <div className='text text-center md:text-end'>
+            <h2 className='text-blue-600 font-medium text-4xl'>رعاية طبية</h2>
+            <h2 className='text-green-600 font-medium text-5xl '> متقدمة وشاملة</h2>
+            <p className=''> نقدم خدمات طبية  عالية الجودة مع فريق من افضل الاطباء<br></br> المختصصين لضمان صحتك و راحتك  </p>
         </div>
-        <div dir="rtl" className='boxs flex gap-8' style={{margin: "60px 0px 60px 10px"}}>
+        <div dir="rtl" className='boxs flex justify-center gap-8 flex-wrap ' style={{margin: "60px 0px 60px 10px"}}>
             <div className='box1 flex flex-col items-center  w-32 h-44 rounded-2xl'
              style={{padding:"10px" ,boxShadow: "1px 1px 9px 2px rgb(1, 1, 1, 0.5)",background:"#ffff"
    }}><PersonIcon style={{background:"#DBEAFE", color:"#1E40AF", borderRadius:"50%"}}/> 
