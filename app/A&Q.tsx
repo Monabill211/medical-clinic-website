@@ -73,7 +73,8 @@ const faqs = [
 
             {/* الإجابة */}
             {isOpen && (
-              <div style={{margin:"10px auto",padding:"15px"}} className="mt-4 w-11/12 md:w-w-2/3 text-center rounded-2xl border border-teal-500 bg-white px-6 py-5 text-gray-700 leading-relaxed">
+              <div style={{margin:"10px auto",padding:"15px"}} className="mt-4 w-11/12 md:w-w-2/3 
+              text-center rounded-2xl border border-teal-500 bg-white px-6 py-5 text-gray-700 leading-relaxed">
                 {item.a}
               </div>
             )}

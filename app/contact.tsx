@@ -18,7 +18,7 @@ export default function Contact() {
         <Loader  />     </div>
       <div  className='flex justify-around flex-col items-center md:flex-row'  >
 
-  <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",margin:"90px" }}>
+  <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",marginBottom:"90px" }}>
       
       {/* العنوان */}
       <h2 className="text-center   mb-6 flex items-center justify-center gap-2 text-blue-500 font-black text-3xl" style={{marginBottom:"25px"}}>
@@ -42,12 +42,6 @@ export default function Contact() {
            
           />  </table>
         </div>
-
-   
-       
-
-     
-        
 
         {/* التاريخ + الوقت */}
         <div className="grid grid-cols-2 gap-3">
@@ -91,7 +85,7 @@ export default function Contact() {
       </form>
 
     </div>
-       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' style={{marginTop:"90px"}}>
+       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' style={{marginBottom:"360px"}}>
       <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"10px"}}>أوقات العمل</h1>
     <div className='flex justify-around'>
        <div>

@@ -13,10 +13,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function Footer() {
   return (
     <div dir="rtl" className='bg-#0f172a' style={{marginTop:"100px",background:"#0f172a" ,color:"white"}}>
-        <div className='grid grid-cols-[1fr_1.5fr_1.5fr_1.5fr] items-center bg-#0f172a '>
-<div className='1 ' >
-    <div className='up flex items-center w-max '>
-        <Loader /  >
+        <div className='items-center bg-#0f172a flex flex-col md:grid grid-cols-[1fr_1.5fr_1.5fr_1.5fr]  '>
+<div className='1 ' style={{marginBottom:'65px'}} >
+    <div className='up flex items-center w-max md:m-auto ' style={{margin:"auto"}}>
+        <Loader />
         
           <h2 className='text-2xl'>عيادة الشفاء</h2>
         </div>
@@ -45,7 +45,7 @@ export default function Footer() {
       </span>
     </div>
     </div>
-      <div className='2' style={{margin:"auto"}} >
+      <div className='2' style={{margin:"auto" ,marginBottom:"60px"}} >
           <div className='up w-max flex items-center '>
      <h1 className='text-2xl font-bold' style={{position:"relative",top:"-49px"}}>خدمتنا الطبية</h1>
 
@@ -59,7 +59,7 @@ export default function Footer() {
 
             </div>
       </div>
-      <div className='3' > 
+      <div className='3' style={{marginBottom:"60px"}} > 
         <div className='up flex items-centerw-max '>
                <h1 className='text-2xl   font-bold' style={{margin:"10px " ,position:"relative",top:"-25px"}}>روابط سريعة</h1>
         </div>

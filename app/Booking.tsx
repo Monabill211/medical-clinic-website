@@ -92,7 +92,11 @@ export default function Booking() {
       </form>
 
     </div>
-       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' style={{marginTop:"90px"}}>
+    <div style={{marginBottom:"360px"}}>
+
+
+ 
+       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' >
       <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"10px"}}>أوقات العمل</h1>
     <div className='flex justify-around'>
        <div>
@@ -114,9 +118,9 @@ export default function Booking() {
 <h2 className='font-bold text-green-600 ' style={{marginTop:"5px",marginRight:"20px"}} ><AttachEmailIcon className='bg-green-300 text-5xl' style={{marginLeft:"10px",padding:"4px",borderRadius:"50%",fontSize:"30px"}}/>mmnabill211@gmail.com</h2>
 <h2 className='font-bold text-green-600 ' style={{marginTop:"5px",marginRight:"20px"}} ><AddLocationAltIcon className='bg-green-300 text-5xl' style={{marginLeft:"10px",padding:"4px",borderRadius:"50%",fontSize:"30px"}}/>جمهورية مصر العربية</h2>
      </div>
-    </div>
-        </div>
- 
+        </div>   
+   </div>
+ </div>
   </div>
   )
 }
