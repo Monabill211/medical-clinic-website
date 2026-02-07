@@ -17,7 +17,7 @@ export default function Serves() {
                 <h5 className=' text-end'style={{marginBottom:"5px"}}>جراحة سلسلة <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%"}} />  </h5>
                 <h5 className='text-end'>علاج المضاعفات <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%"}} />  </h5>
             </div>
-            <div className='box2      hover:-translate-y-1        transition-all duration-300 ease-in-out
+            <div className='box2     hover:-translate-y-1        transition-all duration-300 ease-in-out
   w-72 rounded-2xl hover:shadow-xl/95 hover:shadow-green-200 shadow-md' style={{padding:"10px"}}>
                 <img  src="/img/8b77bf832fa06903cc23c6493e8291a1.jpg" className=' rounded-2xl ' ></img>
              <h2 className='text-center text-blue-600 text-2xl font-black' style={{margin:"10px"}}>عملية خشونة الركبة</h2>
@@ -26,7 +26,8 @@ export default function Serves() {
                 <h5 className=' text-end'>علاج المضاعفات <CheckIcon className='text-green-800 bg-green-200 text-2xl  'style={{padding:"4px",borderRadius:"50%"}} />  </h5>
            
             </div>
-            <div className='box3       hover:-translate-y-1       transition-all duration-300 ease-in-out
+            <div className='box3     
+              hover:-translate-y-1       transition-all duration-300 ease-in-out
  w-72 rounded-2xl hover:shadow-xl/95 hover:shadow-green-200 shadow-md' style={{padding:"10px"}}>
                 <img src="/img/8b77bf832fa06903cc23c6493e8291a1.jpg" className=' rounded-2xl '></img>
  <h2 className='text-center text-blue-600 text-2xl font-black' style={{margin:"10px"}}>عملية خشونة الركبة</h2>
