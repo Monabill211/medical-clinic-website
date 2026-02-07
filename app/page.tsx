@@ -9,19 +9,22 @@ import AQ from "./A&Q";
 import Contact from "./contact";
 import Reviews from "./Reviews";
 import Footer from "./footer";
+import Thankyou from "./thank-you";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <Serves />
       <About />
       <Page />
       <AQ/>
       <Certificates />
       <Reviews />
-      <Contact />
+      <Contact /> */}
+      <Thankyou />
+      
       <Footer />
 
     </div>

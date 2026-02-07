@@ -9,7 +9,7 @@ import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function Contact() {
   return (
-    <div>
+    <div id='contact'>
        <div style={{margin:"50px"}}>
    
  
@@ -101,8 +101,9 @@ export default function Contact() {
          <h4 className='font-bold text-green-400 text-center' style={{marginTop:"5px"}} >11:00 م</h4>
       </div>
     </div>
-    <a href="tel:+201021219588"
-    ><div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+    <a href="tel:+201021219588">
+      
+      <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border

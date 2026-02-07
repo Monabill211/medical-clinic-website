@@ -3,7 +3,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import Loader from './loder';
 export default function Serves() {
   return (
-    <div>   
+    <div id='serves'>   
         <h1 className='text-4xl text-blue-800 text-center'>خدمتنا الطبية</h1>
         <h2 className='text-2xl text-green-800 text-center m-4 ' > نقدم مجموعة من الخدمات الطبية المختلفة</h2> 
         <Loader />

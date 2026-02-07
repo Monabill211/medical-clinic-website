@@ -4,7 +4,7 @@ import CheckIcon from '@mui/icons-material/Check';
 
 export default function About() {
   return (
-    <div>
+    <div id='about' >
         <div style={{margin:"30px"}}>
 
       
@@ -39,7 +39,7 @@ export default function About() {
   </div>
     </div>
     <div>
-    <h1 className='text-4xl text-blue-800 text-center 'style={{margin:"15px"}} > الموهلات والخبرات</h1>
+    <h1 className='text-4xl text-blue-800 text-center 'style={{margin:"55px 15px 25px"}} > الموهلات والخبرات</h1>
             <h2 
             className='b-#fafafa 
             rounded-3xl

@@ -40,7 +40,7 @@ const faqs = [
      <h1 className='text-4xl text-blue-800 text-center' style={{marginTop:"25px"}}>الاسئلة الاكثر شيوعا</h1>
         <h2 className='text-2xl text-green-800 text-center m-4 ' >      إجابات على أكثر الأسئلة شيوعاً حول جراحات العظام والمفاصل</h2> 
         <Loader />
-      <div className=" mx-auto mt-10 space-y-4">
+      <div className=" mx-auto mt-10 space-y-4" id="faqs" >
       {faqs.map((item, index) => {
         const isOpen = openIndex === index;
 

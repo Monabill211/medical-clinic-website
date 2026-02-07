@@ -8,7 +8,7 @@ import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 
 export default function Booking() {
   return (
-    <div style={{background:"#fafafa"}}>
+    <div id='booking' style={{background:"#fafafa"}} >
       <div style={{margin:"30px",background:"#fafafa"}}>
    
  

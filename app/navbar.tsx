@@ -10,6 +10,8 @@ import LanguageIcon from '@mui/icons-material/Language';
 import ButtonHedear from './hedaericon';
 import Hedermobil from './heder-mobil';
 import { useState } from "react";
+import Booking from './Booking';
+import Link from 'next/link';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -22,13 +24,13 @@ export default function Navbar() {
    <ButtonHedear onClick={() => setOpen(true)} ></ButtonHedear>
 </div>
       <Hedermobil open={open} close={() => setOpen(false)} />
+<Link href="/">
 
-       <div className='logo cursor-pointer
-'>
+       <div className='logo cursor-pointer'>
         <img src="\img\download.png" className='w-20 h-20' />
-
       </div>
-     
+     </Link>
+
       <div className="serves flex gap-7 hidden md:flex">
 
   {/* الرئيسية – Active */}
@@ -88,6 +90,10 @@ export default function Navbar() {
 
     "
     style={{padding:"8px"}}
+    onClick={() => {
+  document.getElementById("serves")
+  ?.scrollIntoView({behavior:"smooth"})
+}}
   >
     <MedicalServicesIcon style={{ fontSize: "15px" }} />
     الخدمات الطبية
@@ -99,9 +105,13 @@ export default function Navbar() {
        font-black       hover:text-teal-700
 
 "     style={{padding:"8px"}}
+onClick={() => {
+  document.getElementById("about")
+  ?.scrollIntoView({behavior:"smooth"})
+}}
 >
     <AccountCircleIcon style={{ fontSize: "15px" }} />
-    الاطباء
+    معلومات عن الدكتور
   </h4>
 
   <h4 className="relative flex items-baseline gap-2.5 cursor-pointer px-4 py-2 rounded-full hover:bg-teal-50 transition 
@@ -109,6 +119,10 @@ export default function Navbar() {
   after:-translate-x-1/2 after:opacity-0 hover:after:opacity-100      font-black        hover:text-teal-700
 
 "     style={{padding:"8px"}}
+onClick={() => {
+  document.getElementById("booking")
+  ?.scrollIntoView({behavior:"smooth"})
+}}
 >
     <CalendarMonthIcon style={{ fontSize: "15px" }} />
     حجز موعد
@@ -119,9 +133,13 @@ export default function Navbar() {
   after:-translate-x-1/2 after:opacity-0 hover:after:opacity-100      font-black        hover:text-teal-700
 
 "     style={{padding:"8px"}}
+onClick={() => {
+  document.getElementById("faqs")
+  ?.scrollIntoView({behavior:"smooth"})
+}}
 >
     <InfoIcon style={{ fontSize: "15px" }} />
-    من نحن
+    الاسئلة الاكثر شيوعا 
   </h4>
 
   <h4 className="relative flex items-baseline gap-2.5 cursor-pointer px-4 py-2 rounded-full hover:bg-teal-50 transition 
@@ -129,6 +147,10 @@ export default function Navbar() {
   after:-translate-x-1/2 after:opacity-0 hover:after:opacity-100      font-black        hover:text-teal-700
 
  "     style={{padding:"8px"}}
+ onClick={() => {
+  document.getElementById("contact")
+  ?.scrollIntoView({behavior:"smooth"})
+}}
 >
     <AddCallIcon style={{ fontSize: "15px" }} />
     اتصل بنا
@@ -149,7 +171,12 @@ export default function Navbar() {
        
         <div className='teckt text-white rounded-lg cursor-pointer
 
- ' style={{background:"#0E7D33", padding:"10px"}}>
+ ' style={{background:"#0E7D33", padding:"10px"}}
+ onClick={() => {
+  document.getElementById("booking")
+  ?.scrollIntoView({behavior:"smooth"})
+}}
+ >
         <CalendarMonthIcon style={{fontSize:"15px" , margin: "3px;"}} /> احجز موعد 
       </div>
       </div>
