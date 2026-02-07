@@ -13,7 +13,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function Footer() {
   return (
-    <div dir="rtl" className='bg-#0f172a' style={{marginTop:"100px",background:"#0f172a" ,color:"white" ,bottom:'0'}}>
+    <div dir="rtl" className='bg-#0f172a' style={{marginTop:"100px",background:"#0f172a" ,color:"white" }}>
         <div className='items-center bg-#0f172a flex flex-col md:grid grid-cols-[1fr_1.5fr_1.5fr_1.5fr]  '>
 <div className='1 ' style={{marginBottom:'65px'}} >
     <div className='up flex items-center w-max md:m-auto ' style={{margin:"auto"}}>
