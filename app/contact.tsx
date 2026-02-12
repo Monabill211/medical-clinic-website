@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Loader from './loder';
 import Input from './input';
@@ -7,6 +9,7 @@ import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import Link from 'next/link';
 export default function Contact() {
   return (
     <div id='contact'>
@@ -21,7 +24,7 @@ export default function Contact() {
   <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",marginBottom:"90px" }}>
       
       {/* العنوان */}
-      <h2 className="text-center   mb-6 flex items-center justify-center gap-2 text-blue-500 font-black text-3xl" style={{marginBottom:"25px"}}>
+      <h2 className="text-center   mb-6 flex items-center justify-center gap-2  font-black text-3xl" style={{marginBottom:"25px"}}>
          ارسل لنا رسالتك
       </h2>
 
@@ -30,12 +33,12 @@ export default function Contact() {
 
         {/* الاسم + رقم الهاتف */}
         <div className="grid grid-cols-2 gap-3">
-         <table className='text-blue-500 font-medium '>
+         <table className=' font-medium '>
 الاسم بالكامل:
          
           <Input
           /> </table>
-          <table className='text-blue-500 font-medium '>
+          <table className=' font-medium '>
 
         رقم الهاتف:
           <Inputph
@@ -45,7 +48,7 @@ export default function Contact() {
 
         {/* التاريخ + الوقت */}
         <div className="grid grid-cols-2 gap-3">
-           <table className='text-blue-500 font-light text-2xl '>اختر اليوم المناسب لك:
+           <table className=' font-light text-2xl '>اختر اليوم المناسب لك:
 
          </table>
           <select className="input border border-green-400 rounded-2xl" style={{padding:"10px"}}>
@@ -60,7 +63,7 @@ export default function Contact() {
         </div>
 
         {/* ملاحظات */}
-        <table className='text-blue-500 font-medium '>الرسالة:
+        <table className=' font-medium '>الرسالة:
         <textarea
           rows="4"
           placeholder="  اكت رسالتك هنا..."
@@ -69,7 +72,8 @@ export default function Contact() {
           style={{width:"190% " }}
         />
 </table>
-        {/* زرار */}
+<Link href='thank-you'>
+
         <button
           type="submit"
          
@@ -81,7 +85,7 @@ export default function Contact() {
         >
           ارسال رسالة  <SendIcon className='rotate-3'/>
         </button>
-
+</Link>
       </form>
 
     </div>

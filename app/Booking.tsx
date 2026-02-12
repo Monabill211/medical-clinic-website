@@ -12,7 +12,7 @@ export default function Booking() {
       <div style={{margin:"30px",background:"#fafafa"}}>
    
  
-        <h1 className='text-4xl text-blue-800 text-center'>حجز موعد</h1>
+        <h1 className='text-4xl text-center'>حجز موعد</h1>
         <h2 className='text-2xl text-green-800 text-center m-4 ' >اختر الوقت المناسب لك و احصل علي افضل رعاية</h2> 
         <Loader  />     </div>
   <div dir="rtl" className='flex justify-around flex-col items-center md:flex-row'  >
@@ -20,7 +20,7 @@ export default function Booking() {
   <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",margin:"90px" }}>
       
       {/* العنوان */}
-      <h2 className="text-center   mb-6 flex items-center justify-center gap-2 text-blue-500 font-black text-3xl" style={{marginBottom:"25px"}}>
+      <h2 className="text-center   mb-6 flex items-center justify-center gap-2  font-black text-3xl" style={{marginBottom:"25px"}}>
         معلومات الحجز
       </h2>
 
@@ -29,12 +29,12 @@ export default function Booking() {
 
         {/* الاسم + رقم الهاتف */}
         <div className="grid grid-cols-2 gap-3">
-         <table className='text-blue-500 font-medium '>
+         <table className=' font-medium '>
 الاسم بالكامل:
          
           <Input
           /> </table>
-          <table className='text-blue-500 font-medium '>
+          <table className=' font-medium '>
 
         رقم الهاتف:
           <Inputph
@@ -50,7 +50,7 @@ export default function Booking() {
 
         {/* التاريخ + الوقت */}
         <div className="grid grid-cols-2 gap-3">
-           <table className='text-blue-500 font-light text-2xl '>اختر اليوم المناسب لك:
+           <table className=' font-light text-2xl '>اختر اليوم المناسب لك:
 
          </table>
           <select className="input border border-green-400 rounded-2xl" style={{padding:"10px"}}>
@@ -59,7 +59,7 @@ export default function Booking() {
             <option>الاثنين</option>
             <option>الخميس</option>
           </select> 
-          <table className='text-blue-500 font-light text-2xl '>اختر الوقت المناسب لك:</table>
+          <table className=' font-light text-2xl '>اختر الوقت المناسب لك:</table>
                <select className="input border border-green-400 rounded-2xl" style={{padding:"10px"}}>
             <option>اختر الوقت</option>
             <option>09:00 م</option>
@@ -69,7 +69,7 @@ export default function Booking() {
         </div>
 
         {/* ملاحظات */}
-        <table className='text-blue-500 font-medium '>اضافة ملحوظة:
+        <table className=' font-medium '>اضافة ملحوظة:
         <textarea
           rows="4"
           placeholder="معلومات إضافية تود مشاركتها..."

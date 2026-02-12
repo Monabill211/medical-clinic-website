@@ -15,16 +15,16 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      {/* <Hero />
+      <Hero />
       <Serves />
       <About />
       <Page />
       <AQ/>
       <Certificates />
       <Reviews />
-      <Contact /> */}
-      <Thankyou />
-      
+      <Contact />
+      {/* <Thankyou /> */}
+
       <Footer />
 
     </div>
