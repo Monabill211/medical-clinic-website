@@ -1,6 +1,5 @@
 "use client";
-
-import React from 'react'
+import { useState } from 'react';
 import Loader from './loder';
 import Input from './input';
 import Inputph from './inputnu';
