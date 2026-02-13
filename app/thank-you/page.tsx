@@ -19,18 +19,27 @@ export default function Thankyou() {
 <h3 className='text-center text-2xl font-bold text-gray-800' style={{marginBottom:"16px"}} > ماذا يمكنك أن تفعل الآن؟
 </h3>
 <div className='flex justify-around'>
+<a href="https://www.google.com/maps/search/القاهرة">
     <div style={{padding:"15px"}} className='box flex justify-around items-center flex-col text-gray-800 w-40 bg-gray-100 h-28 rounded-2xl hover:bg-white hover:text-green-400 hover:-translate-y-1 hover:border-1 hover:border-green-400 transition-all duration-300 ease-in-out ' > 
         <span className='bg-white w-12 h-12 flex justify-center items-center shadow-sm' style={{borderRadius:"50%"}}><AddLocationIcon/></span>
         <span className='font-medium'> زيارة العيادة</span>
     </div>
+    </a>
+     <a href="https://wa.me/201021219588">
+   
     <div style={{padding:"15px"}} className='box flex justify-around items-center flex-col text-gray-800 w-40 bg-gray-100 h-28 rounded-2xl hover:bg-white hover:text-green-400 hover:-translate-y-1 hover:border-1 hover:border-green-400 transition-all duration-300 ease-in-out ' > 
         <span className='bg-white w-12 h-12 flex justify-center items-center shadow-sm' style={{borderRadius:"50%"}}><WhatsAppIcon/></span>
         <span className='font-medium'> الارسال الي الوتساب</span>
     </div>
+  </a>
+      <a href="tel:+201021219588">
+
+    
     <div style={{padding:"15px"}} className='box flex justify-around items-center flex-col text-gray-800 w-40 bg-gray-100 h-28 rounded-2xl hover:bg-white hover:text-green-400 hover:-translate-y-1 hover:border-1 hover:border-green-400 transition-all duration-300 ease-in-out ' > 
         <span className='bg-white w-12 h-12 flex justify-center items-center shadow-sm' style={{borderRadius:"50%"}}><LocalPhoneIcon/></span>
         <span className='font-medium'>يمكنك الاتصال بنا</span>
     </div>
+  </a>
 </div>
 
 </div>

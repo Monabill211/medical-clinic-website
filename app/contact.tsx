@@ -9,7 +9,59 @@ import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import SendIcon from '@mui/icons-material/Send';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
+
 export default function Contact() {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+   const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("/api/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      // نظّف الفورم
+      setFormData({
+        name: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+
+      // روح على صفحة الشكر
+      router.push("/thank-you");
+    } else {
+      alert("حصلت مشكلة ❌");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("خطأ في الاتصال بالسيرفر");
+  }
+};
+
+
   return (
     <div id='contact'>
        <div style={{margin:"50px"}}>
@@ -28,7 +80,8 @@ export default function Contact() {
       </h2>
 
       {/* الفورم */}
-      <form className="space-y-4">
+     <form className="space-y-4" onSubmit={handleSubmit}>
+
 
         {/* الاسم + رقم الهاتف */}
         <div className="grid grid-cols-2 gap-3">
@@ -36,12 +89,17 @@ export default function Contact() {
 الاسم بالكامل:
          
           <Input
+           name="name"
+          value={formData.name}
+  onChange={handleChange}
           /> </table>
           <table className=' font-medium '>
 
         رقم الهاتف:
           <Inputph
-           
+            name="phone"
+           value={formData.phone}
+  onChange={handleChange}
           />  </table>
         </div>
 
@@ -50,13 +108,18 @@ export default function Contact() {
            <table className=' font-light text-2xl '>اختر اليوم المناسب لك:
 
          </table>
-          <select className="input border border-green-400 rounded-2xl" style={{padding:"10px"}}>
-            <option> اختر الموضوع</option>
-            <option>استفسار عام</option>
-            <option>استشارة طبية</option>
-            <option>حجز موعد</option>
-            <option> شكوي و اقتراح</option>
-            <option> اخري</option>
+          <select
+           name="subject"
+  value={formData.subject}
+  onChange={handleChange}
+  className="input border border-green-400 rounded-2xl"
+  style={{ padding: "10px" }}>
+            <option value="">اختر الموضوع</option>
+  <option value="استفسار عام">استفسار عام</option>
+  <option value="استشارة طبية">استشارة طبية</option>
+  <option value="حجز موعد">حجز موعد</option>
+  <option value="شكوى واقتراح">شكوى واقتراح</option>
+  <option value="أخرى">أخرى</option>
           </select> 
         
         </div>
@@ -64,27 +127,24 @@ export default function Contact() {
         {/* ملاحظات */}
         <table className=' font-medium '>الرسالة:
         <textarea
-          rows="4"
-          placeholder="  اكت رسالتك هنا..."
-
-          className="input w-full resize-none border-green-400 border-2  rounded-3xl "
-          style={{width:"190% " }}
+        name="message"
+  rows={4}
+  placeholder="اكتب رسالتك هنا..."  style={{width:"190% " }}  value={formData.message}
+  onChange={handleChange}
+  className="input w-full resize-none border-green-400 border-2 rounded-3xl"
         />
 </table>
-<Link href='thank-you'>
+{/* <Link href='thank-you'> */}
 
         <button
-          type="submit"
-         
-          className="w-full bg-white border border-blue-600  py-3 rounded-4xl font-bold  cursor-pointer   hover:shadow-md 
-                              transition-all duration-300 ease-in-out
+          type="submit" className="w-full bg-white border border-blue-600  py-3 rounded-4xl font-bold  cursor-pointer   hover:shadow-md  transition-all duration-300 ease-in-out
     hover:-translate-y-1 hover:bg-blue-800
            hover:text-white transition "
            style={{padding:"15px"}}
         >
           ارسال رسالة  <SendIcon className='rotate-3'/>
         </button>
-</Link>
+{/* </Link> */}
       </form>
 
     </div>
