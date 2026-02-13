@@ -1,98 +1,154 @@
-import React from 'react'
-import Loader from './loder';
-import Input from './input';
-import Inputph from './inputnu';
-import CallIcon from '@mui/icons-material/Call';
-import AttachEmailIcon from '@mui/icons-material/AttachEmail';
-import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
+"use client";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import Loader from "./loder";
+import Input from "./input";
+import Inputph from "./inputnu";
+import CallIcon from "@mui/icons-material/Call";
+import AttachEmailIcon from "@mui/icons-material/AttachEmail";
+import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
+
+function getNextDateForDay(dayName: string) {
+  const daysMap: Record<string, number> = {
+    "الاحد": 0,
+    "الاثنين": 1,
+    "الثلاثاء": 2,
+    "الاربعاء": 3,
+    "الخميس": 4,
+    "الجمعة": 5,
+    "السبت": 6,
+  };
+
+  const targetDay = daysMap[dayName];
+  const today = new Date();
+  const todayDay = today.getDay();
+
+  let diff = targetDay - todayDay;
+  if (diff <= 0) diff += 7;
+
+  const result = new Date();
+  result.setDate(today.getDate() + diff);
+
+  return result;
+}
 
 export default function Booking() {
+  const router = useRouter();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    day: "",
+    time: "",
+    note: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const bookingDate = getNextDateForDay(formData.day);
+    const formattedDate = bookingDate.toLocaleDateString("ar-EG");
+
+    const lastTicket = Number(localStorage.getItem("lastTicket") || "0");
+    const newTicket = lastTicket + 1;
+    localStorage.setItem("lastTicket", String(newTicket));
+
+    const bookingData = {
+      ...formData,
+      date: formattedDate,
+      ticket: newTicket,
+    };
+
+    localStorage.setItem("lastBooking", JSON.stringify(bookingData));
+
+    router.push("booking-aftar");
+  };
+
   return (
-    <div id='booking' style={{background:"#fafafa"}} >
-      <div style={{margin:"30px",background:"#fafafa"}}>
-   
- 
-        <h1 className='text-4xl text-center'>حجز موعد</h1>
-        <h2 className='text-2xl text-green-800 text-center m-4 ' >اختر الوقت المناسب لك و احصل علي افضل رعاية</h2> 
-        <Loader  />     </div>
-  <div dir="rtl" className='flex justify-around flex-col items-center md:flex-row'  >
+    <div id="booking" style={{ background: "#fafafa" }}>
+      <div style={{ margin: "30px", background: "#fafafa" }}>
+        <h1 className="text-4xl text-center">حجز موعد</h1>
+        <h2 className="text-2xl text-green-800 text-center m-4">
+          اختر الوقت المناسب لك و احصل علي افضل رعاية
+        </h2>
+        <Loader />
+      </div>
 
-  <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",margin:"90px" }}>
-      
-      {/* العنوان */}
-      <h2 className="text-center   mb-6 flex items-center justify-center gap-2  font-black text-3xl" style={{marginBottom:"25px"}}>
-        معلومات الحجز
-      </h2>
+      <div dir="rtl" className="flex justify-around flex-col items-center md:flex-row">
+        <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md" style={{ padding: "15px", margin: "90px" }}>
+          <h2 className="text-center mb-6 font-black text-3xl">معلومات الحجز</h2>
 
-      {/* الفورم */}
-      <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-2 gap-3">
+              <table className="font-medium">
+                الاسم بالكامل:
+                <Input name="name" value={formData.name} onChange={handleChange} />
+              </table>
+              <table className="font-medium">
+                رقم الهاتف:
+                <Inputph name="phone" value={formData.phone} onChange={handleChange} />
 
-        {/* الاسم + رقم الهاتف */}
-        <div className="grid grid-cols-2 gap-3">
-         <table className=' font-medium '>
-الاسم بالكامل:
-         
-          <Input
-          /> </table>
-          <table className=' font-medium '>
+              </table>
+            </div>
 
-        رقم الهاتف:
-          <Inputph
-           
-          />  </table>
+            <div className="grid grid-cols-2 gap-3">
+              <table className="font-light text-2xl">اختر اليوم المناسب لك:</table>
+              <select
+                name="day"
+                value={formData.day}
+                onChange={handleChange}
+                className="input border border-green-400 rounded-2xl p-2"
+              >
+                <option value="">اختر اليوم</option>
+                <option value="الاحد">الاحد</option>
+                <option value="الاثنين">الاثنين</option>
+                <option value="الخميس">الخميس</option>
+              </select>
+
+              <table className="font-light text-2xl">اختر الوقت المناسب لك:</table>
+              <select
+                name="time"
+                value={formData.time}
+                onChange={handleChange}
+                className="input border border-green-400 rounded-2xl p-2"
+              >
+                <option value="">اختر الوقت</option>
+                <option value="09:00 م">09:00 م</option>
+                <option value="10:00 م">10:00 م</option>
+                <option value="11:00 م">11:00 م</option>
+              </select>
+            </div>
+
+            <table className="font-medium">
+              اضافة ملحوظة:
+              <textarea
+                name="note"
+                rows={4}
+                value={formData.note}
+                onChange={handleChange}
+               className="input w-full resize-none border-green-400 border-2 rounded-3xl"
+               style={{width:"160%"}}
+              />
+             
+            </table>
+
+            <button
+              type="submit"
+              className="w-full bg-white border border-blue-600 py-3 rounded-4xl font-bold cursor-pointer hover:shadow-md transition-all hover:-translate-y-1 hover:bg-blue-800 hover:text-white"
+              style={{ padding: "15px" }}
+            >
+              تأكيد الحجز
+            </button>
+          </form>
         </div>
-
-   
-       
-
-     
-        
-
-        {/* التاريخ + الوقت */}
-        <div className="grid grid-cols-2 gap-3">
-           <table className=' font-light text-2xl '>اختر اليوم المناسب لك:
-
-         </table>
-          <select className="input border border-green-400 rounded-2xl" style={{padding:"10px"}}>
-            <option> اختر اليوم</option>
-            <option>الاحد</option>
-            <option>الاثنين</option>
-            <option>الخميس</option>
-          </select> 
-          <table className=' font-light text-2xl '>اختر الوقت المناسب لك:</table>
-               <select className="input border border-green-400 rounded-2xl" style={{padding:"10px"}}>
-            <option>اختر الوقت</option>
-            <option>09:00 م</option>
-            <option>10:00 م</option>
-            <option>11:00 م</option>
-          </select>
-        </div>
-
-        {/* ملاحظات */}
-        <table className=' font-medium '>اضافة ملحوظة:
-        <textarea
-          rows="4"
-          placeholder="معلومات إضافية تود مشاركتها..."
-          className="input w-full resize-none border-green-400  "
-        />
-</table>
-        {/* زرار */}
-        <button
-          type="submit"
-         
-          className="w-full bg-white border border-blue-600  py-3 rounded-4xl font-bold  cursor-pointer   hover:shadow-md 
-                              transition-all duration-300 ease-in-out
-    hover:-translate-y-1 hover:bg-blue-800
-           hover:text-white transition "
-           style={{padding:"15px"}}
-        >
-          تأكيد الحجز 
-        </button>
-
-      </form>
-
-    </div>
-    <div style={{marginBottom:"360px"}}>
+        <div style={{marginBottom:"360px"}}>
 
 
  
@@ -120,7 +176,7 @@ export default function Booking() {
      </div>
         </div>   
    </div>
- </div>
-  </div>
-  )
+      </div>
+    </div>
+  );
 }
