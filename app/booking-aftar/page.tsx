@@ -23,98 +23,110 @@ export default function Thankyou() {
   useEffect(() => {
     const data = localStorage.getItem("lastBooking");
     if (data) {
-      setBooking(JSON.parse(data));
+      try {
+        const parsed: BookingData = JSON.parse(data);
+        setBooking(parsed);
+      } catch (error) {
+        console.error("Invalid booking data:", error);
+      }
     }
   }, []);
 
   if (!booking) {
-    return <div className="p-20 text-center">جاري تحميل البيانات...</div>;
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center text-xl font-bold">
+          جاري تحميل البيانات...
+        </div>
+        <Footer />
+      </>
+    );
   }
 
   return (
     <>
-    <Navbar />
-    <div style={{ padding: "200px" }}>
-      <div
-        className="h-550px bg-white rounded-3xl shadow-2xl"
-        style={{ margin: "auto", height: "1250px", padding: "60px", width: "700px" }}
-      >
-        <div className="text-center ">
+      <Navbar />
+
+      <div className="min-h-screen flex items-center justify-center px-4 py-20 bg-gray-50">
+        <div className="w-full max-w-2xl bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center">
+          
           <CheckIcon
-            className="bg-green-600 w-28 shadow-2xl text-white"
-            style={{
+            className="bg-green-600 text-white shadow-2xl mx-auto mb-8"
+            sx={{
               borderRadius: "50%",
-              width: "90px ",
-              marginBottom: "35px",
-              height: "90px",
+              width: 90,
+              height: 90,
               boxShadow: "0 10px 30px 15px rgba(16, 185, 129, .3)",
             }}
           />
-          <h1 className="text-3xl font-black " style={{ marginTop: "35px" }}>
-            تم حجز بنجاح
+
+          <h1 className="text-3xl md:text-4xl font-black mb-10">
+            تم الحجز بنجاح
           </h1>
 
-          <div className="border border-gray-300 flex flex-col rounded-3xl" style={{ marginTop: "65px" }}>
-            <div className="flex justify-between flex-row-reverse border-b border-gray-300" style={{ padding: "30px" }}>
-              <h1 className="text-2xl font-black">:اسم العميل</h1>
-              <h1 className="text-2xl font-black">{booking.name}</h1>
-            </div>
+          {/* Booking Details */}
+          <div className="border border-gray-200 rounded-3xl overflow-hidden text-lg">
 
-            <div className="flex justify-between flex-row-reverse border-b border-gray-300 bg-gray-100" style={{ padding: "30px" }}>
-              <h1 className="text-2xl font-black">:التاريخ</h1>
-              <h1 className="font-bold">
-                {booking.day} - {booking.date}
-              </h1>
-            </div>
+            <Row label="اسم العميل" value={booking.name} />
+            <Row label="التاريخ" value={`${booking.day} - ${booking.date}`} gray />
+            <Row label="الوقت" value={booking.time} />
+            <Row label="التليفون" value={booking.phone} gray />
+            <Row label="ملحوظة" value={booking.note || "—"} />
+            <Row label="رقم الحجز" value={`#${booking.ticket}`} gray last />
 
-            <div className="flex justify-between flex-row-reverse border-b border-gray-300" style={{ padding: "30px" }}>
-              <h1 className="text-2xl font-black">:الوقت</h1>
-              <h1 className="text-2xl font-bold">{booking.time}</h1>
-            </div>
-
-            <div className="flex justify-between flex-row-reverse border-b border-gray-300 bg-gray-100" style={{ padding: "30px" }}>
-              <h1 className="text-2xl font-black">:التليفون</h1>
-              <h1 className="font-black">{booking.phone}</h1>
-            </div>
-
-            <div className="flex justify-between flex-row-reverse" style={{ padding: "30px" }}>
-              <h1 className="text-2xl font-black">:ملحوظة</h1>
-              <h1 className="text-2xl font-black">{booking.note || "—"}</h1>
-            </div>
-
-            <div className="flex justify-between flex-row-reverse bg-gray-100 rounded-b-3xl" style={{ padding: "30px" }}>
-              <h1 className="text-2xl font-black">:رقم الحجز</h1>
-              <h1 className="text-2xl font-black">#{booking.ticket}</h1>
-            </div>
           </div>
 
-          <div>
-            <h1 className="text-3xl text-green-300 bg-gray-100 rounded-3xl" style={{ padding: "30px", margin: "40px" }}>
+          <div className="mt-8">
+            <p className="text-xl text-green-600 bg-green-50 rounded-2xl py-4 px-6">
               سيتم التواصل معك قريبًا لتأكيد الحجز
-            </h1>
+            </p>
           </div>
 
-          <div style={{ margin: "55px" }} className="flex justify-around">
+          <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
             <button
               onClick={() => router.push("/")}
-              className="bg-green-400 text-white font-black text-2xl w-36 cursor-pointer rounded-4xl hover:-translate-y-1 transition-all duration-300 ease-in-out"
-              style={{ padding: "20px" }}
+              className="bg-green-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:-translate-y-1 transition-all duration-300"
             >
               الرئيسية
             </button>
 
             <button
               onClick={() => window.print()}
-              className="w-44 border border-gray-100 cursor-pointer rounded-4xl hover:border-green-300 hover:text-green-500 hover:bg-green-100 hover:-translate-y-1 transition-all duration-300 ease-in-out"
-              style={{ padding: "20px", fontSize: "20px" }}
+              className="border border-gray-300 text-lg px-8 py-4 rounded-full hover:border-green-400 hover:text-green-600 hover:bg-green-50 hover:-translate-y-1 transition-all duration-300"
             >
               طباعة التذكرة
             </button>
           </div>
+
         </div>
       </div>
-    </div>
-    <Footer />
+
+      <Footer />
     </>
+  );
+}
+
+/* Reusable Row Component */
+function Row({
+  label,
+  value,
+  gray,
+  last,
+}: {
+  label: string;
+  value: string;
+  gray?: boolean;
+  last?: boolean;
+}) {
+  return (
+    <div
+      className={`flex justify-between flex-row-reverse px-6 py-5 border-b border-gray-200 ${
+        gray ? "bg-gray-50" : ""
+      } ${last ? "border-b-0 rounded-b-3xl" : ""}`}
+    >
+      <span className="font-black">{label}:</span>
+      <span className="font-bold">{value}</span>
+    </div>
   );
 }
