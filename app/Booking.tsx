@@ -50,27 +50,39 @@ export default function Booking() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
+  try {
     const bookingDate = getNextDateForDay(formData.day);
     const formattedDate = bookingDate.toLocaleDateString("ar-EG");
 
-    const lastTicket = Number(localStorage.getItem("lastTicket") || "0");
-    const newTicket = lastTicket + 1;
-    localStorage.setItem("lastTicket", String(newTicket));
-
-    const bookingData = {
+   const response = await fetch(
+  "https://backendmedcilo-production.up.railway.app/api/bookings",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
       ...formData,
       date: formattedDate,
-      ticket: newTicket,
-    };
+    }),
+  }
+);
+    const data = await response.json();
 
-    localStorage.setItem("lastBooking", JSON.stringify(bookingData));
-
-    router.push("booking-aftar");
-  };
-
+    if (response.ok) {
+router.push(`/booking-aftar/${data._id}`);
+    } else {
+      alert("حصل خطأ في الحجز");
+      console.log(data);
+    }
+  } catch (error) {
+    console.log("Error:", error);
+    alert("السيرفر مش شغال");
+  }
+};
   return (
     <div id="booking" style={{ background: "#fafafa" }}>
       <div style={{ margin: "30px", background: "#fafafa" }}>
