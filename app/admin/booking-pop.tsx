@@ -1,7 +1,12 @@
 import React from "react";
 
-export default function BookingPopup({ open, onClose, onSubmit }) {
-  if (!open) return null;
+type Props = {
+  open: boolean;
+  onClose: () => void;
+  onSubmit: (data: any) => void;
+};
+
+export default function BookingPopup({ open, onClose, onSubmit }: Props) {
 
   return (
     <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50" style={{padding:"30px"}}>
