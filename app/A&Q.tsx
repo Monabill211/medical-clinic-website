@@ -5,8 +5,9 @@ import Loader from './loder';
 
 
 export default function AQ() {
-const [openIndex, setOpenIndex] = useState<number | null>(null)const faqs = [
-    {
+const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+const faqs = [    {
       q: " ما هي عملية تغيير مفصل الفخذ؟       ",
       a: 
       `
