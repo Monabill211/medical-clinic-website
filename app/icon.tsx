@@ -1,48 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+export function GET() {
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="16" fill="#0E7D33" />
+      <path d="M32 14c-8 0-14 6-14 14 0 11 14 22 14 22s14-11 14-22c0-8-6-14-14-14zm0 19a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" fill="#ffffff"/>
+    </svg>
+  `;
 
-const Loader = () => {
-  return (
-    <StyledWrapper>
-      <div className="loading">
-        <svg height="48px" width="64px">
-          <polyline id="back" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" />
-          <polyline id="front" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" />
-        </svg>
-      </div>
-    </StyledWrapper>
-  );
+  return new Response(svg, {
+    status: 200,
+    headers: {
+      "Content-Type": "image/svg+xml",
+    },
+  });
 }
 
-const StyledWrapper = styled.div`
-  .loading svg polyline {
-    fill: none;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .loading svg polyline#back {
-    fill: none;
-    stroke: gray;
-  }
-
-  .loading svg polyline#front {
-    fill: none;
-    stroke: red;
-    stroke-dasharray: 48, 144;
-    stroke-dashoffset: 192;
-    animation: dash_682 1.4s linear infinite;
-  }
-
-  @keyframes dash_682 {
-    72.5% {
-      opacity: 0;
-    }
-
-    to {
-      stroke-dashoffset: 0;
-    }
-  }`;
-
-export default Loader;
+export default function handler() {
+  return GET();
+}

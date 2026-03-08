@@ -1,7 +1,8 @@
 import Admincnrol from "./Admincntrol";
-import Navbar from "./navbar"
-import Contact from "./contact"
-export default function Home( ) {
+import Navbar from "@/app/navbar";
+import Contact from "@/app/contact";
+
+export default function Home() {
   return (
     <div dir='rtl' className="flex">
     <Admincnrol />
