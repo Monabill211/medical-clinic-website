@@ -15,11 +15,14 @@ export default function Page() {
   const [note, setnote] = useState("");
   
   const generatePDF = () => {
-    const element = document.getElementById("pdf-content");
-    html2pdf().from(element).save("report.pdf");
-  };
-const updateMedicine = (index, field, value) => {
-  const newMeds = [...medicines];
+  const element = document.getElementById("pdf-content");
+
+  if (!element) return;
+
+  html2pdf().from(element).save("report.pdf");
+};
+const updateMedicine = (index: number, field: string, value: any) => {
+  const newMeds: any = [...medicines];
   newMeds[index][field] = value;
   setMedicines(newMeds);
 };

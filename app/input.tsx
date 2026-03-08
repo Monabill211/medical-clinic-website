@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Input = ({ name, value, onChange }) => {
-  return (
+const Input = ({ name, value, onChange }: any) => {  return (
     <StyledWrapper>
       <div className="inputGroup">
         <input

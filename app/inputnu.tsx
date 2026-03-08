@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Inputph = ({ name, value, onChange }) => {
+type InputphProps = {
+  name: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const Inputph: React.FC<InputphProps> = ({ name, value, onChange }) => {
   return (
     <StyledWrapper>
       <div className="inputGroup">

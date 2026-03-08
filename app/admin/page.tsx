@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Admincnrol from "./Admincntrol";
 import Navbar from "./navbar"
 import Contact from "./contact"
-// import { Children } from "react";
 export default function Home( ) {
   return (
     <div dir='rtl' className="flex">

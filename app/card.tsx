@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = ({title, des,img}) => {
+const Card = ({ title, des, img }: any) => {
   return (
     <StyledWrapper>
       <div className="card">

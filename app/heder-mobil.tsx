@@ -1,8 +1,7 @@
 'use client'
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function Hedermobil({ open, close }) {
-  return (
+export default function Hedermobil({ open, close }: any) {  return (
     <div
       className={`
         fixed inset-0 z-[999] bg-white

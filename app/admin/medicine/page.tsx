@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Admincnrol from "../Admincntrol";
 import Navbar from "../navbar"

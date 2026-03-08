@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ButtonHedear = () => {
-  return (
+const ButtonHedear = ({ onClick }: any) => {
+    return (
     <StyledWrapper>
       <label className="menuButton" htmlFor="check">
         <input type="checkbox" id="check" />

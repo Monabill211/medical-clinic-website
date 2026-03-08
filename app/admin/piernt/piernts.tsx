@@ -4,8 +4,7 @@ import Mlahotha from '../mlahotha'
 
 export default function Piernts() {
 
-  const [patients, setPatients] = useState([])
-
+const [patients, setPatients] = useState<any[]>([]);
  useEffect(() => {
     fetch("https://backendmedcilo-production.up.railway.app/api/bookings")
       .then(res => res.json())

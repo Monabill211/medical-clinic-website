@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Mlahotha from '../mlahotha'
 export default function Time() {
-     const [patients, setPatients] = useState([])
-    
+const [patients, setPatients] = useState<any[]>([]);    
      useEffect(() => {
         fetch("https://backendmedcilo-production.up.railway.app/api/bookings")
           .then(res => res.json())
