@@ -1,6 +1,7 @@
 import Admincnrol from "./Admincntrol";
-import Navbar from "@/app/navbar";
-import Contact from "@/app/contact";
+import Navbar from "./navbar";
+import Contact from "./contact";
+import Mlahotha from "./mlahotha";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
     <Admincnrol />
     <div className="flex flex-col w-full bg-#d3d3d3" style={{background:"#d3d3d3"}}>
     <Navbar />
-     <Contact /> 
+     <Mlahotha /> 
+     <Contact/>
     </div>
 
     </div>
