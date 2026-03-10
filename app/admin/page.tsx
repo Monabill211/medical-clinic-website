@@ -9,7 +9,7 @@ export default function Home() {
     <Admincnrol />
     <div className="flex flex-col w-full bg-#d3d3d3" style={{background:"#d3d3d3"}}>
     <Navbar />
-     <Mlahotha /> 
+  
      <Contact/>
     </div>
 
