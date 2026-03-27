@@ -145,8 +145,8 @@ router.push(`/booking-aftar/${data._id}`);
                 rows={4}
                 value={formData.note}
                 onChange={handleChange}
-               className="input w-full resize-none border-green-400 border-2 rounded-3xl"
-               style={{width:'380px'}}
+               className="input w-full resize-none border-green-400 border-2 rounded-3xl w-80 md:w-96"
+               
               />
              
             </table>
@@ -164,7 +164,7 @@ router.push(`/booking-aftar/${data._id}`);
 
 
  
-       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' >
+       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md w-11/12 md:w-1/3' >
       <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"10px"}}>أوقات العمل</h1>
     <div className='flex justify-around'>
        <div>
@@ -180,7 +180,7 @@ router.push(`/booking-aftar/${data._id}`);
          <h4 className='font-bold text-green-400 text-center' style={{marginTop:"5px"}} >11:00 م</h4>
       </div>
     </div>
-       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' style={{marginTop:"90px"}}>
+       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md w-11/12 md:w-1/3 ' style={{marginTop:"90px"}}>
         <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"20px"}}>معلومات التواصل</h1>
 <h2 className='font-bold text-green-600 ' style={{marginTop:"5px",marginRight:"20px"}} ><CallIcon className='bg-green-300 text-5xl' style={{marginLeft:"10px",padding:"4px",borderRadius:"50%",fontSize:"30px"}}/>01110094460</h2>
 <h2 className='font-bold text-green-600 ' style={{marginTop:"5px",marginRight:"20px"}} ><AttachEmailIcon className='bg-green-300 text-5xl' style={{marginLeft:"10px",padding:"4px",borderRadius:"50%",fontSize:"30px"}}/>mmnabill211@gmail.com</h2>

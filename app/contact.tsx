@@ -131,7 +131,7 @@ export default function Contact() {
   rows={4}
   placeholder="اكتب رسالتك هنا..."  style={{ }}  value={formData.message}
   onChange={handleChange}
-  className="input w-full resize-none border-green-400 border-2 rounded-3xl w-72 md:w-96"
+  className="input w-full resize-none border-green-400 border-2 rounded-3xl w-80 md:w-96"
         />
 </table>
 {/* <Link href='thank-you'> */}
@@ -148,7 +148,7 @@ export default function Contact() {
       </form>
 
     </div>
-       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md ' style={{marginBottom:"360px"}}>
+       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md w-11/12 md:w-1/3' style={{marginBottom:"360px"}}>
       <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"10px"}}>أوقات العمل</h1>
     <div className='flex justify-around'>
        <div>
@@ -173,7 +173,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"90px" , padding:"15px",width:"95%"}}>
+       rounded-xl shadow-md w-11/12 md:w-1/3 ' style={{marginTop:"90px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:رقم الهاتف</h1>
      <h2 className='font-bold'>01021219588</h2>
@@ -193,7 +193,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px",width:"95%"}}>
+       rounded-xl shadow-md w-11/12 md:w-1/3' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:الوتساب</h1>
      <h2 className='font-bold'>01021219588</h2>
@@ -213,7 +213,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px",width:"95%"}}>
+       rounded-xl shadow-md w-11/12 md:w-1/3 ' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:الايميل</h1>
      <h2 className='font-bold'> mmnabill211@gmail.com</h2>
@@ -236,7 +236,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px",width:"95%"}}>
+       rounded-xl shadow-md w-11/12 md:w-1/3' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:العنوان</h1>
      <h2 className='font-bold'>جمهورية مصر العربية</h2>
