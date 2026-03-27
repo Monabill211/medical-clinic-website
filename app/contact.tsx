@@ -131,7 +131,7 @@ export default function Contact() {
   rows={4}
   placeholder="اكتب رسالتك هنا..."  style={{ }}  value={formData.message}
   onChange={handleChange}
-  className="input  resize-none border-green-400 border-2 rounded-3xl w-85 md:w-96"
+  className="input  resize-none border-green-400 border-2 rounded-3xl w-80 md:w-96"
         />
 </table>
 {/* <Link href='thank-you'> */}
