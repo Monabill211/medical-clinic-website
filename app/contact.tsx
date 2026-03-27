@@ -129,9 +129,9 @@ export default function Contact() {
         <textarea
         name="message"
   rows={4}
-  placeholder="اكتب رسالتك هنا..."  style={{width: "380px" }}  value={formData.message}
+  placeholder="اكتب رسالتك هنا..."  style={{ }}  value={formData.message}
   onChange={handleChange}
-  className="input w-full resize-none border-green-400 border-2 rounded-3xl"
+  className="input w-full resize-none border-green-400 border-2 rounded-3xl w-11/12 md:w-96"
         />
 </table>
 {/* <Link href='thank-you'> */}
