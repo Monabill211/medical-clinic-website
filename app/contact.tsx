@@ -129,7 +129,7 @@ export default function Contact() {
         <textarea
         name="message"
   rows={4}
-  placeholder="اكتب رسالتك هنا..."  style={{width:"190% " }}  value={formData.message}
+  placeholder="اكتب رسالتك هنا..."  style={{width: "92vw" }}  value={formData.message}
   onChange={handleChange}
   className="input w-full resize-none border-green-400 border-2 rounded-3xl"
         />

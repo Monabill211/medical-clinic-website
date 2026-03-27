@@ -146,7 +146,7 @@ router.push(`/booking-aftar/${data._id}`);
                 value={formData.note}
                 onChange={handleChange}
                className="input w-full resize-none border-green-400 border-2 rounded-3xl"
-               style={{width:"160%"}}
+               style={{width:"92vw"}}
               />
              
             </table>
