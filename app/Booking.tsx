@@ -84,7 +84,7 @@ router.push(`/booking-aftar/${data._id}`);
   }
 };
   return (
-    <div id="booking" style={{ background: "#fafafa" }}>
+    <div id="booking" style={{ background: "#fafafa",padding:'15px' }}>
       <div style={{ margin: "30px", background: "#fafafa" }}>
         <h1 className="text-4xl text-center">حجز موعد</h1>
         <h2 className="text-2xl text-green-800 text-center m-4">
@@ -146,7 +146,7 @@ router.push(`/booking-aftar/${data._id}`);
                 value={formData.note}
                 onChange={handleChange}
                className="input w-full resize-none border-green-400 border-2 rounded-3xl"
-               style={{width:"92vw"}}
+               style={{width:'380px'}}
               />
              
             </table>

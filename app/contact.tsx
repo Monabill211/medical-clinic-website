@@ -63,7 +63,7 @@ export default function Contact() {
 
 
   return (
-    <div id='contact'>
+    <div id='contact' style={{padding:"15px"}}>
        <div style={{margin:"50px"}}>
    
  
@@ -129,7 +129,7 @@ export default function Contact() {
         <textarea
         name="message"
   rows={4}
-  placeholder="اكتب رسالتك هنا..."  style={{width: "92vw" }}  value={formData.message}
+  placeholder="اكتب رسالتك هنا..."  style={{width: "380px" }}  value={formData.message}
   onChange={handleChange}
   className="input w-full resize-none border-green-400 border-2 rounded-3xl"
         />
@@ -173,7 +173,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"90px" , padding:"15px"}}>
+       rounded-xl shadow-md ' style={{marginTop:"90px" , padding:"15px",width:"95%"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:رقم الهاتف</h1>
      <h2 className='font-bold'>01021219588</h2>
@@ -193,7 +193,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px"}}>
+       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px",width:"95%"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:الوتساب</h1>
      <h2 className='font-bold'>01021219588</h2>
@@ -213,7 +213,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px"}}>
+       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px",width:"95%"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:الايميل</h1>
      <h2 className='font-bold'> mmnabill211@gmail.com</h2>
@@ -236,7 +236,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px"}}>
+       rounded-xl shadow-md ' style={{marginTop:"10px" , padding:"15px",width:"95%"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:العنوان</h1>
      <h2 className='font-bold'>جمهورية مصر العربية</h2>
