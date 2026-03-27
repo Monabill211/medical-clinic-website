@@ -173,7 +173,7 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
        h-16 bg-white p-6
-       rounded-xl shadow-md w-80 md:w-96  ' style={{marginTop:"90px" , padding:"15px"}}>
+       rounded-xl shadow-md w-80 md:w-96  ' style={{marginTop:"90px",marginRight:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:رقم الهاتف</h1>
      <h2 className='font-bold'>01021219588</h2>
