@@ -131,7 +131,7 @@ export default function Contact() {
   rows={4}
   placeholder="اكتب رسالتك هنا..."  style={{ }}  value={formData.message}
   onChange={handleChange}
-  className="input w-full resize-none border-green-400 border-2 rounded-3xl w-80 md:w-96"
+  className="input  resize-none border-green-400 border-2 rounded-3xl w-96 md:w-96"
         />
 </table>
 {/* <Link href='thank-you'> */}
@@ -229,13 +229,13 @@ export default function Contact() {
 <a href="https://www.google.com/maps/search/القاهرة">
 
 
-     <div className=' flex justify-end items-center gap-4  cursor-pointer     hover:shadow-lg 
+     <div className=' flex justify-end items-center gap-4 cursor-pointer hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
      border-transparent
     hover:border-green-400
-      w-96 h-16 bg-white p-6
+      h-16 bg-white p-6
        rounded-xl shadow-md w-80 md:w-96 ' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:العنوان</h1>

@@ -93,7 +93,7 @@ router.push(`/booking-aftar/${data._id}`);
         <Loader />
       </div>
 
-      <div dir="rtl" className="flex justify-around flex-col items-center md:flex-row">
+      <div dir="rtl" className="flex justify-around flex-col items-center md:flex-row" style={{padding:'10px'}}>
         <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md" style={{ padding: "15px", margin: "90px" }}>
           <h2 className="text-center mb-6 font-black text-3xl">معلومات الحجز</h2>
 
@@ -145,7 +145,7 @@ router.push(`/booking-aftar/${data._id}`);
                 rows={4}
                 value={formData.note}
                 onChange={handleChange}
-               className="input w-full resize-none border-green-400 border-2 rounded-3xl w-96 md:w-96"
+               className="input resize-none border-green-400 border-2 rounded-3xl w-96 md:w-96"
                
               />
              
