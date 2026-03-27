@@ -148,7 +148,7 @@ export default function Contact() {
       </form>
 
     </div>
-       <div className='  w-96 h-52 bg-white p-6 rounded-xl shadow-md w-11/12 md:w-1/3' style={{marginBottom:"360px"}}>
+       <div className=' h-52 bg-white p-6 rounded-xl shadow-md w-80 md:w-96 ' style={{marginBottom:"360px"}}>
       <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"10px"}}>أوقات العمل</h1>
     <div className='flex justify-around'>
        <div>
@@ -166,14 +166,14 @@ export default function Contact() {
     </div>
     <a href="tel:+201021219588">
       
-      <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+      <div className=' flex justify-end items-center gap-4  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
      border-transparent
     hover:border-green-400
-      w-96 h-16 bg-white p-6
-       rounded-xl shadow-md w-11/12 md:w-1/3 ' style={{marginTop:"90px" , padding:"15px"}}>
+       h-16 bg-white p-6
+       rounded-xl shadow-md w-80 md:w-96  ' style={{marginTop:"90px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:رقم الهاتف</h1>
      <h2 className='font-bold'>01021219588</h2>
@@ -186,14 +186,14 @@ export default function Contact() {
 
        
      <a href="https://wa.me/201021219588">
-      <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+      <div className=' flex justify-end items-center gap-4  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
      border-transparent
     hover:border-green-400
-      w-96 h-16 bg-white p-6
-       rounded-xl shadow-md w-11/12 md:w-1/3' style={{marginTop:"10px" , padding:"15px"}}>
+       h-16 bg-white p-6
+       rounded-xl shadow-md w-80 md:w-96 ' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:الوتساب</h1>
      <h2 className='font-bold'>01021219588</h2>
@@ -206,14 +206,14 @@ export default function Contact() {
      </a>
       <a href="mailto:mmnabill211@gmail.com">
         
-<div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+<div className=' flex justify-end items-center gap-4  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
      border-transparent
     hover:border-green-400
-      w-96 h-16 bg-white p-6
-       rounded-xl shadow-md w-11/12 md:w-1/3 ' style={{marginTop:"10px" , padding:"15px"}}>
+       h-16 bg-white p-6
+       rounded-xl shadow-md w-80 md:w-96  ' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:الايميل</h1>
      <h2 className='font-bold'> mmnabill211@gmail.com</h2>
@@ -229,14 +229,14 @@ export default function Contact() {
 <a href="https://www.google.com/maps/search/القاهرة">
 
 
-     <div className=' flex justify-end items-center gap-12  cursor-pointer     hover:shadow-lg 
+     <div className=' flex justify-end items-center gap-4  cursor-pointer     hover:shadow-lg 
              transition-all duration-300 ease-in-out
     hover:-translate-x-2
     hover:border
      border-transparent
     hover:border-green-400
       w-96 h-16 bg-white p-6
-       rounded-xl shadow-md w-11/12 md:w-1/3' style={{marginTop:"10px" , padding:"15px"}}>
+       rounded-xl shadow-md w-80 md:w-96 ' style={{marginTop:"10px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:العنوان</h1>
      <h2 className='font-bold'>جمهورية مصر العربية</h2>
