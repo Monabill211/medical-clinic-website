@@ -63,7 +63,7 @@ export default function Hero() {
             <h2 className='text-green-600 font-medium text-5xl '> متقدمة وشاملة</h2>
             <p className=''> نقدم خدمات طبية  عالية الجودة مع فريق من افضل الاطباء<br></br> المختصصين لضمان صحتك و راحتك  </p>
         </div>
-        <div dir="rtl" className='boxs flex justify-center gap-8 flex-wrap ' style={{margin: "60px 0px 60px 10px"}}>
+        <div dir="rtl" className='boxs flex justify-center gap-4 flex-wrap ' style={{margin: "60px 0px 60px 10px"}}>
             <div className='box1 flex flex-col items-center  w-32 h-44 rounded-2xl'
              style={{padding:"10px" ,boxShadow: "1px 1px 9px 2px rgb(1, 1, 1, 0.5)",background:"#ffff"
    }}><PersonIcon style={{background:"#DBEAFE", color:"#1E40AF", borderRadius:"50%"}}/> 
