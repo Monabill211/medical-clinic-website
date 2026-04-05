@@ -131,7 +131,7 @@ export default function Contact() {
   rows={4}
   placeholder="اكتب رسالتك هنا..."  style={{ }}  value={formData.message}
   onChange={handleChange}
-  className="input  resize-none border-green-400 border-2 rounded-3xl w-78 md:w-96"
+  className="input  resize-none border-green-400 border-2 rounded-3xl w-77 md:w-96"
         />
 </table>
 {/* <Link href='thank-you'> */}
@@ -173,12 +173,12 @@ export default function Contact() {
      border-transparent
     hover:border-green-400
        h-16 bg-white p-6
-       rounded-xl shadow-md w-80 md:w-96  ' style={{marginTop:"90px",marginRight:"10px" , padding:"15px"}}>
+       rounded-xl shadow-md w-80 md:w-96  ' style={{marginTop:"90px",marginRight:"15px" , padding:"15px"}}>
         <div className='text-end'>
              <h1 className='text-gray-500 '>:رقم الهاتف</h1>
      <h2 className='font-bold'>01021219588</h2>
         </div>
-    <CallIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-300 text-green-600
+    <CallIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-100 text-green-600
      hover:text-white hover:bg-green-600  
 
       '/>
@@ -198,7 +198,7 @@ export default function Contact() {
              <h1 className='text-gray-500 '>:الوتساب</h1>
      <h2 className='font-bold'>01021219588</h2>
         </div>
-    <WhatsAppIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-300 text-green-600
+    <WhatsAppIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-100 text-green-600
      hover:text-white hover:bg-green-600  
 
       '/>
@@ -218,7 +218,7 @@ export default function Contact() {
              <h1 className='text-gray-500 '>:الايميل</h1>
      <h2 className='font-bold'> mmnabill211@gmail.com</h2>
         </div>
-    <AttachEmailIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-300 text-green-600
+    <AttachEmailIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-100 text-green-600
      hover:text-white hover:bg-green-600  
 
       '/>
@@ -241,7 +241,7 @@ export default function Contact() {
              <h1 className='text-gray-500 '>:العنوان</h1>
      <h2 className='font-bold'>جمهورية مصر العربية</h2>
         </div>
-    <AddLocationAltIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-300 text-green-600
+    <AddLocationAltIcon style={{padding:"4px",borderRadius:"50%"}} className='text-6xl bg-green-100 text-green-600
      hover:text-white hover:bg-green-600  
 
       '/>

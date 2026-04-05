@@ -145,7 +145,7 @@ router.push(`/booking-aftar/${data._id}`);
                 rows={4}
                 value={formData.note}
                 onChange={handleChange}
-               className="input resize-none border-green-400 border-2 rounded-3xl w-78 md:w-96"
+               className="input resize-none border-green-400 border-2 rounded-3xl w-75 md:w-96"
                
               />
              
