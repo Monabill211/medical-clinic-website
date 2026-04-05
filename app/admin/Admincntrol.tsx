@@ -9,7 +9,7 @@ export default function Admincnrol() {
       </div>
       <span className='border-1 border-gray-400 w-5/6 m-1'></span>
       <div className='flex flex-col items-center gap-10 w-5/6' style={{marginTop:"15px"}}>
-      <Link href="/" >
+      <Link href="/admin" >
   
         <div className='bg-blue-500 rounded-2xl w-5/6 text-center text-white cursor-pointer' style={{padding:"10px"}}
         >لوحة التحكم</div>

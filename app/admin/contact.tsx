@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Mlahotha from './mlahotha';
+import Link from "next/link";
 // import BookingPopup from './booking-pop';
 export default function Contact() {
     const [open, setOpen] = useState(false); 
@@ -66,9 +67,11 @@ export default function Contact() {
       </div>
        <div className='shadow-2xs bg-white rounded-2xl mx-auto' style={{ padding: "25px", margin: "30px",}}>
         <div className='flex justify-between'>
+          
                     <h1 className='text-right font-bold mb-4'>المرضى الجدد</h1>
+                     <Link href="/admin/piernt">
                     <h1 className='text-right font-bold mb-4 text-blue-400 cursor-pointer' >عرض كل </h1>
-
+</Link>
         </div>
 <div className='flex justify-between' style={{borderBottom:"1px solid #c1b9b9", padding:" 10px 40px "}}>
     <h2>اسم المريض</h2>

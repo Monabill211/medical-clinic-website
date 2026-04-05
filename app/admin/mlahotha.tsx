@@ -9,7 +9,7 @@ export default function Mlahotha() {
                 <h2 className='text-center text-gray-600'> اجمالي المرضي</h2>
                 <div className='flex justify-between'>
                   <h2 className='text-2xl'>2.111</h2>
-                  <span className='text-blue-800 bg-blue-400 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}><AccountCircleIcon /></span>
+                  <span className='text-blue-600 bg-blue-200 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}><AccountCircleIcon /></span>
                 </div>
                 <p className='text-green-500' style={{ fontSize: "14px" }}>12% هذا الشهر</p>
               </div>
@@ -18,7 +18,7 @@ export default function Mlahotha() {
                 <h2 className='text-center text-gray-600'> موعيد اليوم</h2>
                 <div className='flex justify-between'>
                   <h2 className='text-2xl'>20</h2>
-                  <span className='text-blue-800 bg-blue-400 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}><AccessTimeIcon /></span>
+                  <span className='text-blue-600 bg-blue-200 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}><AccessTimeIcon /></span>
                 </div>
                 <p className='text-blue-500' style={{ fontSize: "14px", color: "#0891B2" }}>5 مواعيد لم يتم تاكيدها</p>
               </div>
@@ -27,7 +27,7 @@ export default function Mlahotha() {
                 <h2 className='text-center text-gray-600'> اجمالي المرضي</h2>
                 <div className='flex justify-between'>
                   <h2 className='text-2xl'>2.111</h2>
-                  <span className='text-blue-800 bg-blue-400 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}>ic</span>
+                  <span className='text-blue-600 bg-blue-200 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}><AccountCircleIcon /></span>
                 </div>
                 <p className='text-green-500' style={{ fontSize: "14px" }}>12% هذا الشهر</p>
               </div>
@@ -36,7 +36,7 @@ export default function Mlahotha() {
                 <h2 className='text-center text-gray-600'> اجمالي المرضي</h2>
                 <div className='flex justify-between'>
                   <h2 className='text-2xl'>2.111</h2>
-                  <span className='text-blue-800 bg-blue-400 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}>ic</span>
+                  <span className='text-blue-600 bg-blue-200 w-10 h-10 text-center' style={{ padding: "8px", borderRadius: '10px' }}><AccessTimeIcon /></span>
                 </div>
                 <p className='text-green-500' style={{ fontSize: "14px" }}>12% هذا الشهر</p>
               </div>
