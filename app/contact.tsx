@@ -136,13 +136,14 @@ export default function Contact() {
 </table>
 {/* <Link href='thank-you'> */}
 
-        <button
+        <button 
           type="submit" className="w-full bg-white border border-blue-600  py-3 rounded-4xl font-bold  cursor-pointer   hover:shadow-md  transition-all duration-300 ease-in-out
     hover:-translate-y-1 hover:bg-blue-800
            hover:text-white transition "
            style={{padding:"15px"}}
         >
           ارسال رسالة  <SendIcon className='rotate-3'/>
+
         </button>
 {/* </Link> */}
       </form>
