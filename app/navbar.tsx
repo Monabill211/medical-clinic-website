@@ -166,7 +166,7 @@ export default function Navbar() {
         </div>
 
         {/* Links */}
-        <nav className="flex flex-col gap-1 p-4">
+        <nav className="flex flex-col gap-5 p-4 ">
           {menuItems.map((item) => (
             <button
               key={item.label}
@@ -178,13 +178,23 @@ export default function Navbar() {
             </button>
           ))}
         </nav>
+           {/* اللغة + زرار الحجز */}
+        <div className="lang flex gap-3 items-center text-green-600" style={{margin:" 20px auto"}}>
+          <div className="flex items-center gap-1">
+            <LanguageIcon />
+            <select>
+              <option value="ar">AR</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          </div>
 
         {/* زرار الحجز في الأسفل */}
         <div className="p-4 mt-auto border-t border-teal-100">
           <button
             onClick={() => scrollTo("booking")}
-            className="w-full flex items-center justify-center gap-2 text-white rounded-xl py-3 font-bold transition hover:opacity-90"
-            style={{ background: "#0E7D33" }}
+            className="w-4/5 flex items-center justify-center gap-2 text-white rounded-3xl py-3 font-bold transition hover:opacity-90"
+            style={{ background: "#0E7D33",padding:"15px",margin:"auto" }}
           >
             <CalendarMonthIcon fontSize="small" />
             احجز موعد
