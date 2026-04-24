@@ -48,7 +48,7 @@ export default function Footer() {
       </span>
     </div>
     </div>
-      <div className='2' style={{margin:"auto" ,marginBottom:"79px"}} >
+      <div className='2' style={{ marginBottom:"79px"}} >
           <div className='up w-max flex items-center ' style={{marginBottom:"40px"}}>
      <h1 className='text-2xl font-bold' style={{position:"relative",top:"-15"}}>خدمتنا الطبية</h1>
             </div>
@@ -57,20 +57,20 @@ export default function Footer() {
       onClick={() => {
   document.getElementById("serves")
   ?.scrollIntoView({behavior:"smooth"})}} 
-  style={{margin:"auto"}}
+
      >عملية الغضروف</h2>
      <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2' 
      onClick={() => {
   document.getElementById("serves")
   ?.scrollIntoView({behavior:"smooth"})}} 
-    style={{margin:"auto"}}
+
 
     >عملية الركبه</h2>
      <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2' 
      onClick={() => {
   document.getElementById("serves")
   ?.scrollIntoView({behavior:"smooth"})}} 
-    style={{margin:"auto"}}
+
 
     > العظام</h2>
      <h2 className=' hover:text-green-400 cursor-pointer           
@@ -78,7 +78,7 @@ export default function Footer() {
         onClick={() => {
   document.getElementById("serves")
   ?.scrollIntoView({behavior:"smooth"})}} 
-    style={{margin:"auto"}}
+  
 
       >عملية العظام</h2>
 
@@ -93,7 +93,7 @@ export default function Footer() {
       onClick={() => {
   document.getElementById("booking")
   ?.scrollIntoView({behavior:"smooth"})}} 
-    style={{margin:"auto"}}
+
 
   >حجز موعد</h2>
      <h2 className=' hover:text-green-400 cursor-pointer w-max font-bold transition-all duration-300 ease-in-out hover:-translate-x-2' 

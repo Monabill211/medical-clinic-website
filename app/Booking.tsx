@@ -93,7 +93,7 @@ router.push(`/booking-aftar/${data._id}`);
         <Loader />
       </div>
 
-      <div dir="rtl" className="flex justify-around flex-col items-center md:flex-row" style={{padding:'10px'}}>
+      <div dir="rtl" className="flex justify-center gap-1 md:gap-28 flex-col items-center md:flex-row" style={{padding:'10px'}}>
         <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md" style={{ padding: "15px", margin: "90px" }}>
           <h2 className="text-center mb-6 font-black text-3xl">معلومات الحجز</h2>
 
@@ -180,7 +180,7 @@ router.push(`/booking-aftar/${data._id}`);
          <h4 className='font-bold text-green-400 text-center' style={{marginTop:"5px"}} >11:00 م</h4>
       </div>
     </div>
-       <div className=' h-52 bg-white p-6 rounded-xl shadow-md w-80 md:w-96  ' style={{margin:"90px -25px"}}>
+       <div className=' h-52 bg-white p-6 rounded-xl shadow-md w-80 md:w-96 ' style={{marginTop:"90px"}}>
         <h1 className='text-center font-medium text-3xl text-blue-500 ' style={{margin:"20px"}}>معلومات التواصل</h1>
 <h2 className='font-bold text-green-600 ' style={{marginTop:"5px",marginRight:"20px"}} ><CallIcon className='bg-green-300 text-5xl' style={{marginLeft:"10px",padding:"4px",borderRadius:"50%",fontSize:"30px"}}/>01110094460</h2>
 <h2 className='font-bold text-green-600 ' style={{marginTop:"5px",marginRight:"20px"}} ><AttachEmailIcon className='bg-green-300 text-5xl' style={{marginLeft:"10px",padding:"4px",borderRadius:"50%",fontSize:"30px"}}/>mmnabill211@gmail.com</h2>

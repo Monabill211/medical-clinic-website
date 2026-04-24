@@ -70,7 +70,7 @@ export default function Contact() {
         <h1 className='text-4xl text-blue-800 text-center'>تواصل معانا</h1>
         <h2 className='text-2xl text-green-800 text-center m-4 ' >نحن هنا لخدمتك تواصل معانا ولاا تردد</h2> 
         <Loader  />     </div>
-      <div  className='flex justify-around flex-col items-center md:flex-row'  >
+      <div  className='flex justify-center items-center gap-2 md:gap-28 flex-col md:flex-row '  >
 
   <div className="w-full max-w-md mx-auto bg-white p-6 rounded-xl shadow-md " style={{padding:"15px",marginBottom:"90px" }}>
       
