@@ -14,7 +14,7 @@ import Link from 'next/link';
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const scrollTo = (id) => {
+  const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setOpen(false);
   };
